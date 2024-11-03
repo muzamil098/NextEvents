@@ -5,6 +5,7 @@ export async function getAllEvents() {
     "https://nextcourse-csdatafetching-default-rtdb.firebaseio.com/events.json"
   );
   const data = await response.json();
+  console.log(data)
   const events = [];
   //   for (const key in data) {
   //     events.push({
